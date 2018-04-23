@@ -1,7 +1,9 @@
 package com.example.callivoice;
 
 import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -80,6 +82,8 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth.addAuthStateListener(mAuthListener);
     }
+
+
 
     private void startSignIn() {
         String email = mUserEmail.getText().toString();
